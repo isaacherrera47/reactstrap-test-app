@@ -2,18 +2,18 @@ import React from 'react';
 import './DealerLocator.css';
 import Axios from 'axios';
 import {
-    Row,
+    Badge,
+    Button,
     Col,
     Form,
     FormGroup,
     Input,
+    InputGroup,
+    InputGroupAddon,
     ListGroup,
     ListGroupItem,
-    Badge,
-    Table,
-    Button,
-    InputGroup,
-    InputGroupAddon
+    Row,
+    Table
 } from 'reactstrap';
 
 
@@ -86,6 +86,7 @@ class DealerLocator extends React.Component {
                                             {key} <Badge pill>{this.state.stateCounter[key]}</Badge>
                                         </ListGroupItem>)
                                     }
+                                    return null;
                                 }, this)}
                             </ListGroup>
                         </Col>

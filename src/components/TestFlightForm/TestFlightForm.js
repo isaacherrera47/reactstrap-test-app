@@ -3,7 +3,8 @@ import './TestFlightForm.css';
 import {
     Alert,
     Button,
-    Card, CardBody,
+    Card,
+    CardBody,
     CardSubtitle,
     CardText,
     CardTitle,
@@ -75,7 +76,8 @@ class TestFlightForm extends React.Component {
                         </Form>
                         <br/>
                         <Button className='submit-btn' onClick={this.onSubmit}>Submit</Button>
-                        <Alert color='success' isOpen={this.state.showSuccess}>Your data were submitted successfully</Alert>
+                        <Alert color='success' isOpen={this.state.showSuccess}>Your data were submitted
+                            successfully</Alert>
                         <Alert color='danger' isOpen={this.state.showDanger}>Something went horribly wrong!</Alert>
                     </CardBody>
                 </Card>
